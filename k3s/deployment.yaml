@@ -16,7 +16,7 @@ spec:
         - name: example4
           image: bekovkanat/example4:latest
           ports:
-            - containerPort: :8080
+            - containerPort: 8080
           env:
             - name: DATABASE_URL
               value: 'postgres://postgres:Zxcvbnm123@host:5432/example4'
@@ -33,5 +33,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: :8080
+      targetPort: 8080
       nodePort: 31111 # Можно указать порт от 30000 до 32767
